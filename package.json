@@ -12,10 +12,16 @@
     "url": "git+https://github.com/taylorem2787/friend-finder.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Taylor E",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/taylorem2787/friend-finder/issues"
   },
-  "homepage": "https://github.com/taylorem2787/friend-finder#readme"
+  "homepage": "https://github.com/taylorem2787/friend-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "path": "^0.12.7",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {}
 }
