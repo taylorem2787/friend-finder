@@ -7,16 +7,16 @@ var path = require('path');
 // =======================================================================
 // Set up express app
 var app  = express();
-var PORT = process.env.PORT || 3006;
+var PORT = process.env.PORT || 3000;
 
 // =======================================================================
 // Set up data parsing for express app 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
-app.use(bodyParser.json({type:'application/vnd.api+json'}));
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
-app.use(express.static('app');
+app.use(express.static('app'));
 
 // ROUTES =================================================================
 // route files needed to map out the site
