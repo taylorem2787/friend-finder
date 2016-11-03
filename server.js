@@ -7,7 +7,7 @@ var path = require('path');
 // =======================================================================
 // Set up express app
 var app  = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3006;
 
 // =======================================================================
 // Set up data parsing for express app 
