@@ -10,7 +10,7 @@ var app  = express();
 var PORT = process.env.PORT || 8080;
 
 // Handling public files
-
+app.use(express.static('public'))
 
 // =======================================================================
 // Set up data parsing for express app 
