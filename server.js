@@ -23,7 +23,6 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(express.static('app'));
 app.use(express.static(path.join(__dirname, '/public'));
 app.use(express.static(path.join(__dirname, '/public/css'));
-
 // ROUTES =================================================================
 // route files needed to map out the site
 require('./app/routing/api-routes.js')(app); 
