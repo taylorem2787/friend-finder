@@ -7,10 +7,11 @@ var path = require('path');
 // =======================================================================
 // Set up express app
 var app  = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
+// =======================================================================
 // Handling public files
-app.use(express.static('public'))
+app.use('/static', express.static(__dirname + '/public'));
 
 // =======================================================================
 // Set up data parsing for express app 
