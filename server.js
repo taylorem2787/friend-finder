@@ -11,7 +11,7 @@ var PORT = process.env.PORT || 3000;
 
 // =======================================================================
 // Handling public files
-
+app.use('/static', express.static(__dirname + '/public'));
 
 // =======================================================================
 // Set up data parsing for express app 
@@ -21,8 +21,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 app.use(express.static('app'));
-app.use(express.static(path.join(__dirname, '/public'));
-app.use(express.static(path.join(__dirname, '/public/css'));
+
 // ROUTES =================================================================
 // route files needed to map out the site
 require('./app/routing/api-routes.js')(app); 
