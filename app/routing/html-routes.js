@@ -15,9 +15,19 @@ module.exports = function(app) {
 		res.sendFile(path.join(__dirname + '/../public/survey.html'));
 	});
 
-	app.get('/survey', function(req, res){
+	app.get('/home', function(req, res){
+		res.sendFile(path.join(__dirname + '/../public/css'));
+	});
+
+		app.get('/home', function(req, res){
 		res.sendFile(path.join(__dirname + '/../public/css/style.css'));
 	});
+
+		app.get('/home', function(req, res){
+		res.sendFile(path.join(__dirname + '/../public/css'));
+	});
+
+	app.use(express.static(path.join(__dirname, '/../public/css/style.css')));
 
 	//Default - No matches
 	app.use(function(req, res){
