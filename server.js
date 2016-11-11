@@ -11,7 +11,7 @@ var PORT = process.env.PORT || 3000;
 
 // =======================================================================
 // Handling public files
-app.use('/static', express.static(__dirname + '/public'));
+app.use('/css', express.static(__dirname + '/public/css'));
 
 // =======================================================================
 // Set up data parsing for express app 
