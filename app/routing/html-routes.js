@@ -5,6 +5,15 @@ var path = require('path');
 // ROUTES =================================================================
 // Sends html file via express app
 module.exports = function(app) {
+
+	app.get('/css/style.css', function (req, res) {
+		res.sendFile(path.join(__dirname + '/../public/css/style.css'));
+	});
+
+	app.get('/css/style.css', function (req, res) {
+		res.sendFile(path.join(__dirname + '/../public/img'));
+	});
+
 	// HTML GET requests for when user visits home/survey html page
 	app.get('/home', function(req, res){
 		//responds with path  [directory name, path to survey.html]
