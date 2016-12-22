@@ -1,4 +1,6 @@
 body {
+    background-image: url(../images/background3.jpg) !important;
+    background-size: cover !important;
     width: 100%;
     padding: 0px;
     margin: 0 auto;
@@ -16,8 +18,6 @@ body {
     color: #fff;
 }
 .container-wrapper {
-    background-image: url(../images/background3.jpg) !important;
-    background-size: cover !important;
     width: 96%;
     max-width: 940px;
     height: 100%;
@@ -37,6 +37,7 @@ body {
 h1, h2, h3, h4 {
     text-shadow: 2px 2px 4px #000000;
     color: snow !important;
+    font-family: 'Pacifico', cursive;
 }
 h3 {
     font-size: 20px !important;
